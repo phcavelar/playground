@@ -1,3 +1,6 @@
+# Results folders
+cond_vae
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
