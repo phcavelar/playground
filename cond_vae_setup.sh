@@ -22,4 +22,4 @@ fi
 
 
 conda create -n ${env_name}
-command ${install_method} env update -n ${env_name} --file ${env_name}${env_postfix}.yml
+command ${install_method} env update -n ${env_name} --file yml/${env_name}${env_postfix}.yml
