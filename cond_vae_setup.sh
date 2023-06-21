@@ -1,6 +1,11 @@
 #!/bin/bash
 env_name='cond_vae'
 
+platform_postfix=''
+if [[ "$OSTYPE" == "darwin"* ]]; then
+   platform_postfix='_mac'
+fi
+
 # Prefer mamba if possible
 if command -v mamba; then
     install_method='mamba'
@@ -22,4 +27,4 @@ fi
 
 
 conda create -n ${env_name}
-command ${install_method} env update -n ${env_name} --file yml/${env_name}${env_postfix}.yml
+command ${install_method} env update -n ${env_name} --file yml/${env_name}${env_postfix}${platform_postfix}.yml
