@@ -1,0 +1,33 @@
+name: loraopt
+channels:
+  - nvidia
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.12
+  - ipykernel=6.29
+  - ipywidgets=8.1
+  - tqdm=4.66
+  - fire=0.6
+  - pytorch=2.4
+  - pytorch-cuda=11.8
+  - torchvision=0.19
+  - torchaudio= 2.4.0
+  - torchtext=0.6
+  - transformers=4.31
+  - tokenizers=0.13
+  - tensorly
+  - gdown=5.2
+  - numpy=2.0
+  - scipy=1.14
+  - plotnine=0.13
+  - seaborn=0.13
+  - scikit-learn=1.5
+  - umap-learn=0.5
+  - more-itertools=10.3
+  - pip
+  - pip:
+    - bitsandbytes==0.43.* # Anaconda bits and bytes only provides the cpu binary
+    #- git+https://github.com/jiaweizzhao/GaLore.git@63138dbe5bfaa5172dbd5a11363896b971ca260f
+    - git+https://github.com/phcavelar/GaLore.git --force-reinstall
